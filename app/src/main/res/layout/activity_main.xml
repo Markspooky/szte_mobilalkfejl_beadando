@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Edit_Text_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/rd_ide_az_email_c_med"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Edit_Text_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="416dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ide_rd_a_jelszavad"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Text_Username"
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/bejelentkezes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Text_Password"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/googleSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginWithGoogle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/bejelentkez_s_google_lel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/loginAsGuestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginAsGuest"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/bel_p_s_vend_gk_nt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleSignInButton"
+        app:layout_constraintVertical_bias="0.078" />
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="register"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="@string/regisztracio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginAsGuestButton"
+        app:layout_constraintVertical_bias="0.078" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

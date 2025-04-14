@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Beadando</string>
+    <string name="ide_rd_a_jelszavad">Ide írd a jelszavad</string>
+    <string name="ide_rd_a_felhasznalo_neved">Ide írd a felhasználó neved</string>
+    <string name="bejelentkezes">Bejelentkezés</string>
+    <string name="regisztracio">Regisztráció</string>
+    <string name="email_cim">Email cím</string>
+    <string name="jelszo_again">Jelszó újra</string>
+    <string name="megse">Mégse</string>
+    <string name="aszf">Elfogadom az ASZF-t és a felhasználási feltételeket</string>
+    <string name="bejelentkez_s_google_lel">Bejelentkezés Google-lel</string>
+    <string name="bel_p_s_vend_gk_nt">Belépés vendégként</string>
+    <string name="rd_ide_az_email_c_med">Írd ide az email címed</string>
+    <string name="w_i_p">W.I.P</string>
+</resources>
